@@ -106,7 +106,7 @@ Divide dataset as train and test that is splited in 2D.
 x = independent variables
 y = dependent variables
 
-To divide dataset as 0.33 as test and tehe rest as train
+To divide dataset as 0.33 as test and the rest as train
 
 ```
 x_train, x_test, y_train, y_test = train_test_split(res, result3, test_size=0.33, random_state= 0)

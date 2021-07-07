@@ -39,6 +39,7 @@ Data types contains 2 different categories: categoric and numeric.
 ### Missing Values
 
 1. Numeric values
+
 To fill the missing values: 
     1. assign a constant numeric value
     2. generate mean value and assign to missing values
@@ -70,18 +71,22 @@ To fill the missing values:
 P.S. Fit that machine learning learns. Transform that machine learning perform 
 
 2. Categoric values
+
 Some of the machine learning algorithms need numeric values to work with. In this case, the categoric values transform to the numberic values.
 
     1. Nominal
         1. Binomial
+
             e.g. gender
             2 different values (0,1)
         2. Polynomial
+
             e.g. country codes
             every label transform as a column and assigned as 0,1
             ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/polynomialvalues.png)
 
     2. Ordinal 
+    
         Changing it to numeric values
 
 

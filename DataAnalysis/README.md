@@ -21,20 +21,23 @@ To fill the missing values:
         Missing values find with the numpy.nan that imputes nan values
         Strategy that to replace nan with mean 
 
-        Find missing values in age column
+        
         ```
         ages = datafile.iloc[:,1:4].values  # iloc = integer location
         ```
+        Find missing values in age column
+
 
         ```
         imputer = imputer.fit(ages[:,1:4])
         ```
         Get mean value(Fit function used to train generally)
-        
+
+
         ```
         ages[:,1:4] = imputer.transform
         ```
         Change nan values
 
 
-2. Non numberic values
+2. Categoric values

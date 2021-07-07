@@ -9,7 +9,11 @@ import pandas as pd
 datafile = pd.read_csv('simpledata.csv')
 ```
 
+### Data Types
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/datatypes.png)
+
 ### Missing Values
+
 1. Numeric values
 To fill the missing values: 
     1. assign a constant numeric value
@@ -35,7 +39,7 @@ To fill the missing values:
 
 
         ```
-        ages[:,1:4] = imputer.transform
+        ages[:,1:4] = imputer.transform(ages[:,1:4]) 
         ```
         Change nan values
 

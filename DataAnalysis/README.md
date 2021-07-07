@@ -8,3 +8,33 @@ import pandas as pd
 
 datafile = pd.read_csv('simpledata.csv')
 ```
+
+### Missing Values
+1. Numeric values
+To fill the missing values: 
+    1. assign a constant numeric value
+    2. generate mean value and assign to missing values
+    
+        ```
+        imputer = SimpleImputer(missing_values= np.nan, strategy= 'mean')
+        ```
+        Missing values find with the numpy.nan that imputes nan values
+        Strategy that to replace nan with mean 
+
+        Find missing values in age column
+        ```
+        ages = datafile.iloc[:,1:4].values  # iloc = integer location
+        ```
+
+        ```
+        imputer = imputer.fit(ages[:,1:4])
+        ```
+        Get mean value(Fit function used to train generally)
+        
+        ```
+        ages[:,1:4] = imputer.transform
+        ```
+        Change nan values
+
+
+2. Non numberic values

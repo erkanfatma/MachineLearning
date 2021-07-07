@@ -39,7 +39,6 @@ Data types contains 2 different categories: categoric and numeric.
 ### Missing Values
 
 1. Numeric values
-
 To fill the missing values: 
     1. assign a constant numeric value
     2. generate mean value and assign to missing values
@@ -68,10 +67,9 @@ To fill the missing values:
         ```
         Change nan values
 
-P.S. Fit that machine learning learns. Transform that machine learning perform 
+P.S. Fit that machine learning learns. Transform that machine learning perform. 
 
 2. Categoric values
-
 Some of the machine learning algorithms need numeric values to work with. In this case, the categoric values transform to the numberic values.
 
     1. Nominal

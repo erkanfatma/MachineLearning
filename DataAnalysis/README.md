@@ -8,6 +8,7 @@ import pandas as pd
 
 datafile = pd.read_csv('simpledata.csv')
 ```
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/DataLoad.py)
 
 ### Data Types
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/datatypes.png)
@@ -69,6 +70,8 @@ To fill the missing values:
 
 P.S. Fit that machine learning learns. Transform that machine learning perform. 
 
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/MissingNumericValues.py)
+
 2. Categoric values :
 Some of the machine learning algorithms need numeric values to work with. In this case, the categoric values transform to the numberic values.
 
@@ -84,6 +87,34 @@ Some of the machine learning algorithms need numeric values to work with. In thi
     2. Ordinal :
         Changing it to numeric values
 
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/CategoricValues.py)
 
+### Data Combining & DataFrame
+Data frames has index columns to access any row easily. The main difference between data frame and array is that data frame includes header.
 
-    
+After changing the categorical values in the data, different arrays are created and to generate a concatenated dataset concat function used. 
+
+```
+res2 = pd.concat([res, result3], axis=1)
+```
+With axis = 1 , in every index columns are added.
+
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/DataFrame.py)
+
+### Dividing Dataset as Train and Test
+Divide dataset as train and test that is splited in 2D. 
+x = independent variables
+y = dependent variables
+
+To divide dataset as 0.33 as test and tehe rest as train
+
+```
+x_train, x_test, y_train, y_test = train_test_split(res, result3, test_size=0.33, random_state= 0)
+```
+
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/DividingData.py)
+
+### Data Scaling
+Find a relationship between columns with changing values of data to generate close values.
+
+[Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/DataScaling.py)

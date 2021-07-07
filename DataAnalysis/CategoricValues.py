@@ -21,4 +21,5 @@ countrycodes[:,0] = labelEnc.fit_transform(datafile.iloc[:,0])
 # One Hot Encoding
 oneHotEnc = preprocessing.OneHotEncoder()
 countrycodes[:,0] = oneHotEnc.fit_transform(datafile.iloc[:,0])
+# countrycodes = oneHotEnc.fit_transform(countrycodes).toarray()
 

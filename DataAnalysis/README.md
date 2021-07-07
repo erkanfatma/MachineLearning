@@ -76,17 +76,14 @@ Some of the machine learning algorithms need numeric values to work with. In thi
 
     1. Nominal
         1. Binomial
-
             e.g. gender
             2 different values (0,1)
         2. Polynomial
-
             e.g. country codes
             every label transform as a column and assigned as 0,1
             ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/polynomialvalues.png)
 
     2. Ordinal 
-    
         Changing it to numeric values
 
 

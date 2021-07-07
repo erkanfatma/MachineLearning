@@ -72,16 +72,16 @@ P.S. Fit that machine learning learns. Transform that machine learning perform.
 2. Categoric values
 Some of the machine learning algorithms need numeric values to work with. In this case, the categoric values transform to the numberic values.
 
-    1. Nominal
-        1. Binomial
+    - Nominal
+        - Binomial
             e.g. gender
             2 different values (0,1)
-        2. Polynomial
+        -  Polynomial
             e.g. country codes
             every label transform as a column and assigned as 0,1
             ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/polynomialvalues.png)
 
-    2. Ordinal 
+    - Ordinal 
         Changing it to numeric values
 
 

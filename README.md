@@ -1,7 +1,13 @@
 # MachineLearning
 Basics of machine learning
 
-1. Data Analysis
+1. Data Analysis 
+  - Data Load
+  - Missing Numeric Values
+  - Categoric Values
+  - Data Combining & DataFrame
+  - Dividing Dataset as Train & Test
+  - Data Scaling
 2. Prediction
 3. Classification
 4. Clustering

@@ -25,4 +25,4 @@ y = ax + b
 
 with the above formula, y is a dependent variable, and x is an independent variable. x can be anything. a is a coefficient.
 
-To find a best formula for the model.
+To find a best formula for the model and minimize the error rate. 

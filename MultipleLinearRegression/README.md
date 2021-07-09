@@ -34,7 +34,7 @@ P.S. : What about model with 4 independent variables? It can be calculated but n
 A variable that states another  variable. 
 In encoding a column values translated columns that have 0 and 1 values. 
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/dummy_variable.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/dummyvariable.png)
 
 Data variable is an important feature when data preprocessing. For example if you want to change gender to numeric variable or country code to numeric variable. Think about plate number, then this data is dummy variable. 
 

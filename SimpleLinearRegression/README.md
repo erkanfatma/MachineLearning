@@ -4,9 +4,9 @@
 Prediction algorithms generally comes from statistics.  
 
 When prediction is process in the categoric values this implies classification. On the other hand, if it is done in numeric values that implies prediction.
-1. Classification
+1. **Classification**
     Categorical
-2. Clustering
+2. **Clustering**
     Numeric
 
 Prediction generally done in numeric values depend on time interval which means dependent in time intervals. But in some cases, it can be independent.
@@ -19,10 +19,15 @@ Forecasting is used to estimate the future and it is a special part of predictio
 Prediction contains the past values estimations, middle values estimations. For example, there is a missing value in the middle of the dataset, and you want to estimate it. Can be non relation between prediction and time interval. It is used to find the bad data.
 
 ### Simple Linear Regression
+Situation that a dependent variable depend an independent variable. 
 In this model we have a estimated values and real values. 
 
-y = ax + b
+*y = ax + b*
 
 with the above formula, y is a dependent variable, and x is an independent variable. x can be anything. a is a coefficient.
 
 To find a best formula for the model and minimize the error rate. 
+
+
+##### Refererences
+https://towardsdatascience.com/simple-linear-regression-35b3d940950e 

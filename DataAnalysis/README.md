@@ -14,32 +14,32 @@ datafile = pd.read_csv('simpledata.csv')
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/datatypes.png)
 
 Data types contains 2 different categories: categoric and numeric.
-1. Categoric
+1. **Categoric**
     e.g. gender, educational level, licence plate code.
     no relation like greater or smaller 
 
-    1. Nominal
+    1. **Nominal**
         no order.
         e.g. model of cars, brands
-        1. Binomial
-        2. Polynomial
-    2. Ordinal
+        1. **Binomial**
+        2. **Polynomial**
+    2. **Ordinal**
         ordinal comes from order.
         e.g. licence plate code, door number
 
-2. Numeric
+2. **Numeric**
     e.g. age, weight
 
-    1. Ratio
+    1. **Ratio**
         can be proportion
         e.g. age
-    2. Interval
+    2. **Interval**
         within a range
         e.g. temperature 
 
 ### Missing Values
 
-1. Numeric values :
+1. **Numeric values** :
 To fill the missing values: 
     1. assign a constant numeric value
     2. generate mean value and assign to missing values
@@ -72,7 +72,7 @@ P.S. Fit that machine learning learns. Transform that machine learning perform.
 
 [Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/MissingNumericValues.py)
 
-2. Categoric values :
+2. **Categoric values** :
 Some of the machine learning algorithms need numeric values to work with. In this case, the categoric values transform to the numberic values.
 
     1. Nominal :

@@ -2,7 +2,7 @@
 
 Prediction  model when more then one feature exist in the dataset. First step is to find useful independent variables.
 
-### Simple Linear Regression
+## Simple Linear Regression
 General formula is: y = ax + b
 
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/simplelinearregression.png)
@@ -15,7 +15,7 @@ Example graph of simple linear regression:
 
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/slr_graph.png)
 
-### Multiple Linear Regression 
+## Multiple Linear Regression 
 There are different variables that is expressed with ß(i).  ß(0) is a constant and an error rate is shown.  
 
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/multiplelinearregression.png)
@@ -30,7 +30,7 @@ Every point(P) in the graph depend on 3 different variables. formula of 'a' achi
 
 P.S. : What about model with 4 independent variables? It can be calculated but not shown in the 3D graph.
 
-#### Dummy Data
+### Dummy Data
 A variable that states another  variable. 
 In encoding a column values translated columns that have 0 and 1 values. 
 
@@ -44,14 +44,14 @@ If a column encoded, then both of the columns, original column and encoded colum
 
 If a direct connection exist in encoded columns, it is significant to select dummy data. If there are more than one dummy data, then selection of dummy data is essential. For example if a birth place is encoded like gender column, then we select all of the encoded columns to use because there is no information about where the place is. If Izmir is 0 then this means not Ankara is 1. There is no clear information there. Birth place is polynomial.
 
-#### p-value
+### p-value
 Probability value.
 Usefull in null hypothesis (H0).
 
-##### H0 (null hypothesis)
+#### H0 (null hypothesis)
  Example in a cookie factory. A cookie is generally 30 grams, think that if more than 30 grams cookies, less than 30 grams cookies exist, if exist how many of them and so on.
 
-##### H1
+#### H1
 Reverse of H1. Example if time span of the lecture increase, the success rate is not increases always. to fail hypothesis. 
 
 p-value: With how many examples to fail hypothesis. Generally selected as 0.05.
@@ -59,7 +59,7 @@ p-value: With how many examples to fail hypothesis. Generally selected as 0.05.
 If p decreases, failure of H0 will increases. 
 If p increases, failure of H1 will increases. 
 
-#### Variable Selection
+### Variable Selection
 While selecting variables, think that if every variable affects the dependent value(y) at the same rate? Or some variables do not effect the value. Is it necessary to select all the variables? Different approaches exist for the question
 
 1. **Include All Variables**

@@ -48,10 +48,10 @@ If a direct connection exist in encoded columns, it is significant to select dum
 Probability value.
 Usefull in null hypothesis (H0).
 
-###### H0 (null hypothesis)
+##### H0 (null hypothesis)
  Example in a cookie factory. A cookie is generally 30 grams, think that if more than 30 grams cookies, less than 30 grams cookies exist, if exist how many of them and so on.
 
-###### H1
+##### H1
 Reverse of H1. Example if time span of the lecture increase, the success rate is not increases always. to fail hypothesis. 
 
 p-value: With how many examples to fail hypothesis. Generally selected as 0.05.

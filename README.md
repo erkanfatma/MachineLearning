@@ -1,4 +1,4 @@
-# MachineLearning
+# Machine Learning
 Basics of machine learning
 
 1. Data Analysis 

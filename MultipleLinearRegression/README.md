@@ -183,3 +183,10 @@ Output:
 
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_result2.png)
 
+
+### Difference Between OneHotEncoding and LabelEncoding
+Encoders using when transforming categoric variables to numberic variables. 
+
+One hot encoding is useful when there are more than two different value exist in the column. For instance, outlook contains sunny, rainy and overcast. 3 different variables exist. Encoding them as 0-1 values not meaningful for these columns. We need to place it 3 different columns in the dataset.
+
+Label encoding is useful when there are 2 different value exist in the column. For example, if the value is yes-no or true-false. It is sufficient to transform. 

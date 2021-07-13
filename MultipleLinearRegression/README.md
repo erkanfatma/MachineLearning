@@ -70,6 +70,7 @@ While selecting variables, think that if every variable affects the dependent va
 2. **Backward Elimination** 
     - stepwise approach
     - At the beginning a dataset is huge and after eliminations some columns,variables, remove and the number of columns decrease. 
+    
     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination.png)
 
     - Significance Level (SL): success level like p value. 
@@ -81,8 +82,10 @@ While selecting variables, think that if every variable affects the dependent va
     6. Finish up the machine learning.
 
         ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_algorithm.png)
+        
 3. **Forward Selection**
     - stepwise approach
+        
         ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/forwardselection.png)
 
     1. Define a significance level.
@@ -90,17 +93,22 @@ While selecting variables, think that if every variable affects the dependent va
     3. Next, calculate p values in the model for every variable. Look at the variable which has minimum value.
     4. Keep the variable that has minimum p-value. And select a new variable from the dataset and add the keeping value to system.
     5. Update machine learning and then select a new variable to continue. If the P < SL, then continue to select new variables. If P > SL then ends machine learning.
+
       ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/forwardselection_algorithm.png)
+      
 4. **Bidirectional Elimination**
     - stepwise approach
     - combination of forward selection and backward elimination
+
      ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/bidirectionalelimination.png)
+
      1. Define SL
      2. Define a model using all variables.
      3. Calculate p-value for all variables. Select the variable that has minimum p variable.
      4. Variable that selected in the step 3 which has the minimum p-value is holding and all other variables is added to system and the variable with minimum p-value is stored in system.
      5. Variables which P value smaller than SL is staying in the system and old variables not removed from the system.
      6. Finish up machine learning.
+
      ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/bidirectionalelimination_algorithm.png)
 
     - P.S. In some cases more than one significance levels can be define for one of them is used for forward step, another one is used for backward step. 
@@ -108,8 +116,11 @@ While selecting variables, think that if every variable affects the dependent va
     - with heuristic approach
     1. defining a success criterion.
     2. build all possible models. If there are 2 variables then, only 1 model exist. If there are 3 variables exist, then 3 models exist for machine learning. If n variables exist, model number is (2^n) -1 , +1.
+
     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/numberofmodels.png)
+
     3. 
+
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/allmethods.png)
 
 
@@ -161,6 +172,7 @@ print(model.summary())
 ```
 
 ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_result.png)
+
 Analyzing P > |t|. where p value is smaller is better. for this data, x5 has a problem. Because in backward elimination we need smaller p values.
 Solution is to eliminate 4th element in the array: 
 

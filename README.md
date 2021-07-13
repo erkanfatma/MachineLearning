@@ -34,7 +34,7 @@ Basics of machine learning
 6. Reinforced Learning 
   - UCB
   - Thompson Sampling
-7. Matural Language & Text Processing
+7. Natural Language & Text Processing
 
 8. Deep Learning
 

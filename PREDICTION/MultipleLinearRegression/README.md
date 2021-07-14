@@ -5,7 +5,7 @@ Prediction  model when more then one feature exist in the dataset. First step is
 ## Simple Linear Regression
 General formula is: y = ax + b
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/simplelinearregression.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/simplelinearregression.png)
 
 Simple linear regression contains an error rate inside of it. 
 
@@ -13,18 +13,18 @@ Example :  sales = α + ß(month) + ε
 
 Example graph of simple linear regression:
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/slr_graph.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/slr_graph.png)
 
 ## Multiple Linear Regression 
 There are different variables that is expressed with ß(i).  ß(0) is a constant and an error rate is shown.  
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/multiplelinearregression.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/multiplelinearregression.png)
 
 Example : length = ß(0) + ß(1)*weight + ß(2)*age +ß(3)* shoe_size + ε
 
 Example graph of multiple linear regression:
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/mlr_graph.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/mlr_graph.png)
 
 Every point(P) in the graph depend on 3 different variables. formula of 'a' achieved with x,y,z values. The line of the model contains an error rate. 
 
@@ -34,7 +34,7 @@ P.S. : What about model with 4 independent variables? It can be calculated but n
 A variable that states another  variable. 
 In encoding a column values translated columns that have 0 and 1 values. 
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/dummyvariable.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/dummyvariable.png)
 
 Data variable is an important feature when data preprocessing. For example if you want to change gender to numeric variable or country code to numeric variable. Think about plate number, then this data is dummy variable. 
 
@@ -71,7 +71,7 @@ While selecting variables, think that if every variable affects the dependent va
     - stepwise approach
     - At the beginning a dataset is huge and after eliminations some columns,variables, remove and the number of columns decrease. 
     
-    ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination.png)
+    ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/backwardelimination.png)
 
     - Significance Level (SL): success level like p value. 
     1. First define a significance level and then find variables (columns) that provide this significance level. 
@@ -81,12 +81,12 @@ While selecting variables, think that if every variable affects the dependent va
     5. Update machine learning and continue to step 3.
     6. Finish up the machine learning.
 
-        ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_algorithm.png)
+        ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/backwardelimination_algorithm.png)
         
 3. **Forward Selection**
     - stepwise approach
         
-        ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/forwardselection.png)
+        ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/forwardselection.png)
 
     1. Define a significance level.
     2. Define a model using all variables.
@@ -94,13 +94,13 @@ While selecting variables, think that if every variable affects the dependent va
     4. Keep the variable that has minimum p-value. And select a new variable from the dataset and add the keeping value to system.
     5. Update machine learning and then select a new variable to continue. If the P < SL, then continue to select new variables. If P > SL then ends machine learning.
 
-      ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/forwardselection_algorithm.png)
+      ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/forwardselection_algorithm.png)
       
 4. **Bidirectional Elimination**
     - stepwise approach
     - combination of forward selection and backward elimination
 
-     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/bidirectionalelimination.png)
+     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/bidirectionalelimination.png)
 
      1. Define SL
      2. Define a model using all variables.
@@ -109,7 +109,7 @@ While selecting variables, think that if every variable affects the dependent va
      5. Variables which P value smaller than SL is staying in the system and old variables not removed from the system.
      6. Finish up machine learning.
 
-     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/bidirectionalelimination_algorithm.png)
+     ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/bidirectionalelimination_algorithm.png)
 
     - P.S. In some cases more than one significance levels can be define for one of them is used for forward step, another one is used for backward step. 
 5. **Score Comparison**
@@ -117,11 +117,11 @@ While selecting variables, think that if every variable affects the dependent va
     1. defining a success criterion.
     2. build all possible models. If there are 2 variables then, only 1 model exist. If there are 3 variables exist, then 3 models exist for machine learning. If n variables exist, model number is (2^n) -1 , +1.
 
-    ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/numberofmodels.png)
+    ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/numberofmodels.png)
 
     3. 
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/allmethods.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/allmethods.png)
 
 
 ### File Orders 
@@ -171,7 +171,7 @@ Print model:
 print(model.summary()) 
 ```
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_result.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/backwardelimination_result.png)
 
 Analyzing P > |t|. where p value is smaller is better. for this data, x5 has a problem. Because in backward elimination we need smaller p values.
 Solution is to eliminate 4th element in the array: 
@@ -181,7 +181,7 @@ X_l = conc_lr.iloc[:,[0,1,2,3,5]].values
 ```
 Output: 
 
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/MultipleLinearRegression/img/backwardelimination_result2.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/PREDICTION/MultipleLinearRegression/img/backwardelimination_result2.png)
 
 
 ### Difference Between OneHotEncoding and LabelEncoding

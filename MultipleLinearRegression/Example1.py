@@ -35,7 +35,7 @@ print(result)
  
 # #Divide Data for Test and Train
 from sklearn.model_selection import train_test_split
-#result.iloc[:,:-1] =independent variables
+#result.iloc[:,:-1] = independent variables
 #result.iloc[:,-1:] = dependent variable
 x_train, x_test, y_train, y_test = train_test_split(result.iloc[:,:-1], result.iloc[:,-1:], test_size=0.33, random_state=0)
 print("Y test")

@@ -11,7 +11,7 @@ datafile = pd.read_csv('simpledata.csv')
 [Codes](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/DataLoad.py)
 
 ### Data Types
-![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/datatypes.png)
+![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/1.DataAnalysis/img/datatypes.png)
 
 Data types contains 2 different categories: categoric and numeric.
 1. **Categoric**
@@ -82,7 +82,7 @@ Some of the machine learning algorithms need numeric values to work with. In thi
         2. Polynomial:
             e.g. country codes
             every label transform as a column and assigned as 0,1
-            ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/DataAnalysis/img/polynomialvalues.png)
+            ![alt text](https://github.com/erkanfatma/MachineLearning/blob/main/1.DataAnalysis/img/polynomialvalues.png)
 
     2. Ordinal :
         Changing it to numeric values
